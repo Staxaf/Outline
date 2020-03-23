@@ -8,7 +8,7 @@ h1,h2,h3,h4,h5,h6{
 }
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 .container{
     max-width: 1180px;
@@ -19,7 +19,7 @@ a{
 header{
     /* height: 900px; */
     background: url(../img/bg_2.jpg) no-repeat;
-    background-size: 100%;
+    /* background-size: 100%; */
     background-size: cover;
 }
 .header-menu{
@@ -77,10 +77,6 @@ header{
     width: 100%;
     border-top: 3px solid #fff;
 }
-.menu-nav__button-burger:hover{
-    height: 20px;
-    transition: 0.4s ease;
-}
 .menu-nav__button label span{
     cursor: pointer;
 }
@@ -108,11 +104,10 @@ header{
     border-bottom: 1px solid #eaeaea;
     font-size: 18px;
 }
+
+
 .active{
     color: rgb(23, 218, 185);
-}
-.menu-nav__item ul li a{
-    color: black;
 }
 
 ul li a:hover{
@@ -751,16 +746,30 @@ footer{
     }
 }
 /* For fixed top */
-/* .menu-fixed{
+ .menu-fixed{
     position: fixed;
-    background-color: black;
+    background: white;
     animation-name: show_header;
     animation-duration: 1s;
     width: 100%;
-    padding-top: 30px;
-    padding-bottom: 0px;
     z-index: 1;
     margin: 0px;
-    height: 85px;
+    height: 65px;
     vertical-align: middle;
-} */
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid wheat;
+} 
+.menu-fixed span{
+    color: black;
+}
+.menu-fixed .logo a{
+    border: 2px black solid;
+}
+.menu-fixed .menu-nav__button-burger{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+.menu-fixed .menu-nav__button-burger::before{
+    border-top: 3px solid black;
+}
